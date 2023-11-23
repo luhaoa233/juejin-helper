@@ -10,7 +10,7 @@ const dingding = async ({ title = '', content = '' } = {}) => {
         msgtype: 'markdown',
         markdown: {
           title,
-          text: content || '',
+          text: content || '#### 杭州天气 @150XXXXXXXX \n',
         },
       })
       .then(response => {

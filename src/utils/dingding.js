@@ -3,6 +3,7 @@ const { DINGDING_WEBHOOK } = require('../ENV.js')
 const SUCCESS_CODE = 0
 
 const dingding = async ({ title = '', content = '' } = {}) => {
+   console.log('钉钉数据', title, content);
   try {
     await axios
       .post(DINGDING_WEBHOOK, {
